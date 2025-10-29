@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f5f5f5;
+}
+
+/*Cabeçalho e Navegação */
+header {
+  background: linear-gradient(135deg, #7c93a0, #5a8fbb);
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+header .perfil-img {
+  width: 115px;
+  height: 115px;
+  border-radius: 10%;
+  border: 1px solid white;
+  margin-bottom: 1rem;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Conteúdo Principal */
+main {
+  padding: 2rem;
+}
+
+section {
+  margin-bottom: 3rem;
+}
+
+h2 {
+  color: #0077b6;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #d3dadb;
+  display: inline-block;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+/* Habilidades */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+  list-style: none;
+}
+
+.grid li {
+  background: white;
+  padding: 1rem;
+  border-radius: 10px;
+  text-align: center;
+
+}
+
+/* Projetos */
+.projetos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.projetos-grid article {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+
+}
+
+.projetos-grid article:hover {
+  transform: translateY(-5px);
+}
+
+/* Contato */
+#contato ul {
+  list-style: none;
+}
+
+#contato a {
+  color: #0077b6;
+}
+
+/* Rodapé*/
+footer {
+  text-align: center;
+  background: #2c4f7e;
+  color: white;
+  padding: 1rem;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  header {
+    padding: 1.5rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  main {
+    padding: 1rem;
+  }
+}
